@@ -63,3 +63,4 @@ Par la suite passez sur le port 3001 sur le Browser.
 # Date de sortie du JEU
 
 [EduWeb](https://EduWeb.com/) sera disponible le 1er Mai 2024 , Tenez vous prêt !
+La version finale est prete , le lien de l'app :(https://EduWeb.com/)
