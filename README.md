@@ -11,6 +11,13 @@
  Dans le cadre de notre projet, nous allons concevoir, développer et mettre en œuvre un système innovant d'aide à la décision dédié à l'enseignement à distance.
 * Ce système sera conçu pour répondre aux besoins spécifiques des acteurs clés de l'enseignement à distance. 
 * Faciliter la prise de décision : Fournir des informations précises et pertinentes aux utilisateurs pour les aider à prendre des décisions éclairées en matière de planification pédagogique, d'allocation des ressources.
+  
+# Fonctionnalités proposé
+•	Page d'accueil présentant une introduction à la plateforme et un accès rapide aux sections principales.
+•	Section "Etudiant" dont les utilisateurs s’inscrit dans notre système.
+•	Section "Page Formulaire" fournit des informations détaillées sur les données que l'utilisateur est censé fournir ou sur les champs à remplir sur la page.
+•	Page "Conseils" offrant des ressources et des conseils pratiques pour l’éducation en ligne.
+•	Section "Formulaire de contact" permettant aux étudiants de poser des questions supplémentaires.
 
  # Projet en cours de réalisation par :
 * Nada El ouardi Groupe GG 
