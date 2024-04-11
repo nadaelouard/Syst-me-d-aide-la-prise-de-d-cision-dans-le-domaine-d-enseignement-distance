@@ -20,8 +20,8 @@
 * En tant qu'utilisateur visitant la page "Conseils", je veux avoir accès à des ressources et à des conseils pratiques pour améliorer mon expérience d'apprentissage en ligne, comme des stratégies d'organisation, des techniques d'étude efficaces et des astuces pour rester motivé.
 * En tant qu'étudiant ayant une question spécifique, je veux pouvoir contacter facilement l'équipe d'assistance d'Eduweb en utilisant le formulaire de contact, afin d'obtenir des réponses rapides et précises à mes préoccupations ou mes questions supplémentaires.
  # Projet en cours de réalisation par :
-* Nada El ouardi Groupe GG 
-* Rewae Amjahid Groupe GG
+* Nada EL OUARDI Groupe GG 
+* Rewae AMJAHID Groupe GG
 # Technologies
 * [Node.js](https://nodejs.org/)
 * [Visual Studio Code](https://code.visualstudio.com/)
