@@ -13,12 +13,12 @@
 * Faciliter la prise de décision : Fournir des informations précises et pertinentes aux utilisateurs pour les aider à prendre des décisions éclairées en matière de planification pédagogique, d'allocation des ressources.
   
 # Fonctionnalités proposé
-•	Page d'accueil présentant une introduction à la plateforme et un accès rapide aux sections principales.
-•	Section "Etudiant" dont les utilisateurs s’inscrit dans notre système.
-•	Section "Page Formulaire" fournit des informations détaillées sur les données que l'utilisateur est censé fournir ou sur les champs à remplir sur la page.
-•	Page "Conseils" offrant des ressources et des conseils pratiques pour l’éducation en ligne.
-•	Section "Formulaire de contact" permettant aux étudiants de poser des questions supplémentaires.
-
+* En tant qu'Utilisateur, je peux me connecter
+* En tant qu'utilisateur, je veux pouvoir enregistrer mes préférences, suivre ma progression et faciliter ma prise de décision
+* En tant qu'étudiant inscrit, je veux pouvoir accéder à ma section dédiée sur Eduweb, où je peux consulter mes cours, télécharger des ressources pédagogiques et interagir avec mes enseignants et mes pairs.
+* En tant qu'utilisateur de la section "Page Formulaire", je veux voir une explication claire des informations que je dois fournir ou des champs que je dois remplir sur la page, afin de comprendre clairement ce qui est attendu de moi et de remplir le formulaire avec précision.
+* En tant qu'utilisateur visitant la page "Conseils", je veux avoir accès à des ressources et à des conseils pratiques pour améliorer mon expérience d'apprentissage en ligne, comme des stratégies d'organisation, des techniques d'étude efficaces et des astuces pour rester motivé.
+* En tant qu'étudiant ayant une question spécifique, je veux pouvoir contacter facilement l'équipe d'assistance d'Eduweb en utilisant le formulaire de contact, afin d'obtenir des réponses rapides et précises à mes préoccupations ou mes questions supplémentaires.
  # Projet en cours de réalisation par :
 * Nada El ouardi Groupe GG 
 * Rewae Amjahid Groupe GG
