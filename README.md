@@ -1,66 +1,70 @@
-# Syst-me-d-aide-la-prise-de-d-cision-dans-le-domaine-d-enseignement-distance
+# Getting Started with Create React App
 
-`https://github.com/nadaelouard/Syst-me-d-aide-la-prise-de-d-cision-dans-le-domaine-d-enseignement-distance.git`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-* [EduWeb](https://EduWeb.com/)  notre application innovante conçue pour faciliter la prise de décision dans le domaine de l'enseignement à distance. Dans un paysage éducatif en constante évolution, les enseignants et les administrateurs sont confrontés à de nombreux défis pour offrir des expériences d'apprentissage en ligne de qualité.
+## Available Scripts
 
-* EduWeb est là pour simplifier ce processus en vous fournissant des outils puissants et des informations précieuses. Notre application combine l'analyse de données avancée, des algorithmes intelligents et une interface conviviale pour vous aider à naviguer dans les complexités de l'enseignement à distance.
-  
- Objectifs
+In the project directory, you can run:
 
- Dans le cadre de notre projet, nous allons concevoir, développer et mettre en œuvre un système innovant d'aide à la décision dédié à l'enseignement à distance.
-* Ce système sera conçu pour répondre aux besoins spécifiques des acteurs clés de l'enseignement à distance. 
-* Faciliter la prise de décision : Fournir des informations précises et pertinentes aux utilisateurs pour les aider à prendre des décisions éclairées en matière de planification pédagogique, d'allocation des ressources.
-  
-# Fonctionnalités proposé
-* En tant qu'Utilisateur, je peux me connecter
-* En tant qu'utilisateur, je veux pouvoir enregistrer mes préférences, suivre ma progression et faciliter ma prise de décision
-* En tant qu'étudiant inscrit, je veux pouvoir accéder à ma section dédiée sur Eduweb, où je peux consulter mes cours, télécharger des ressources pédagogiques et interagir avec mes enseignants et mes pairs.
-* En tant qu'utilisateur de la section "Page Formulaire", je veux voir une explication claire des informations que je dois fournir ou des champs que je dois remplir sur la page, afin de comprendre clairement ce qui est attendu de moi et de remplir le formulaire avec précision.
-* En tant qu'utilisateur visitant la page "Conseils", je veux avoir accès à des ressources et à des conseils pratiques pour améliorer mon expérience d'apprentissage en ligne, comme des stratégies d'organisation, des techniques d'étude efficaces et des astuces pour rester motivé.
-* En tant qu'étudiant ayant une question spécifique, je veux pouvoir contacter facilement l'équipe d'assistance d'Eduweb en utilisant le formulaire de contact, afin d'obtenir des réponses rapides et précises à mes préoccupations ou mes questions supplémentaires.
- # Projet en cours de réalisation par :
-* Nada EL OUARDI Groupe GG 
-* Rewae AMJAHID Groupe GG
-# Technologies
-* [Node.js](https://nodejs.org/)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [ReactJS](https://reactjs.org/)
-* [Mongo DB](https://mongodb.org/)
-* [HTML5](https://www.w3schools.com/html/)
-* [CSS](https://www.w3schools.com/Css/)
-* [JavaScript](https://javascript.org/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Python](https://www.python.org/)
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# Installation et Execution de l'application web
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-[Node.js](https://nodejs.org/) est requis pour pouvoir exécuter cette application. C'est le back end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
+### `npm test`
 
-    `npm install`
-    
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Puis pour lancer l'application coté back lancez la commande :
+### `npm run build`
 
-    `npm start`
-   
-Par la suite passez sur le port 3000 sur le Browser.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-[ReactJS](https://reactjs.org/) est requis pour pouvoir exécuter cette application. C'est le front end de l'app. Pour installer tous les modules nécessaires au fonctionnement de notre jeu, exécutez la commande suivante :
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-    `npm install`
-    
+### `npm run eject`
 
-Puis pour lancer l'application coté front lancez la commande :
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-    `npm start`
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Par la suite passez sur le port 3001 sur le Browser.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-# Date de sortie du JEU
+## Learn More
 
-[EduWeb](https://EduWeb.com/) sera disponible le 1er Mai 2024 , Tenez vous prêt !
-La version finale est prete , le lien de l'app :(https://EduWeb.com/)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
