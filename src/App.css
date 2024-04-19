@@ -6,22 +6,22 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+*/
 .App-header {
-  background-color: #282c34;
+  background-color: #e2ecdb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:black;
 }
 
 .App-link {
@@ -35,4 +35,94 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.navigation-button {
+  padding: 10px 20px;
+  background-color: #91f4bd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+  background-color: #1de1ca;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Couleur de fond de la barre de navigation */
+  padding: 10px 0; /* Espacement autour des éléments de la barre de navigation */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrer les éléments de la liste horizontalement */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Espacement entre les éléments de la liste */
+}
+
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(14, 208, 147); /* Couleur du texte des boutons */
+}
+
+nav ul li button:hover {
+  text-decoration: none;
+}
+/* Styles pour le formulaire de connexion */
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #45a049;
 }

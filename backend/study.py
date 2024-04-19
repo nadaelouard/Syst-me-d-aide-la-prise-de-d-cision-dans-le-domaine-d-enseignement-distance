@@ -17,7 +17,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 # You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 # Charger les données depuis le fichier Excel
-df3 = pd.read_excel("C:\\Users\\hp\\Desktop\\PFA\\nada.xlsx")
+df3 = pd.read_excel("C:\\Users\\hp\\Desktop\\PFA\\data.xlsx")
 
 # Afficher les premières lignes du DataFrame
 #print(df3)
@@ -25,18 +25,18 @@ df3 = pd.read_excel("C:\\Users\\hp\\Desktop\\PFA\\nada.xlsx")
 #df3 = pd.read_excel("C:\\Users\\hp\\Desktop\\PFA\\nada.xlsx")
 
 # Remplacer les valeurs dans la colonne "Gender"
-df3['Gender'] = df3['Gender'].replace({'Boy': 1, 'Girl': 0})
-df3['Education Level'] = df3['Education Level'].replace({'University': 1, 'School': 0, 'College':0})
-df3['Institution Type'] = df3['Institution Type'].replace({'Government': 1, 'Non Government': 0})
-df3['IT Student'] = df3['IT Student'].replace({'Yes': 1, 'No': 0})
+df3['sexe'] = df3['sexe'].replace({'Boy': 1, 'Girl': 0})
+df3['Niveau éducation'] = df3['Niveau éducation'].replace({'University': 1, 'School': 0, 'College':0})
+df3['Type établissement'] = df3['Type établissement'].replace({'Government': 1, 'Non Government': 0})
+df3['étudiant en informatique' ] = df3['étudiant en informatique '].replace({'Yes': 1, 'No': 0})
 df3['Location'] = df3['Location'].replace({'Yes': 1, 'No': 0})
-df3['Load-shedding'] = df3['Load-shedding'].replace({'Low': 1, 'High': 0})
-df3['Financial Condition'] = df3['Financial Condition'].replace({'Mid': 1, 'Poor': 0,'Rich':1})
-df3['Internet Type'] = df3['Internet Type'].replace({'Wifi': 1, 'Mobile Data': 0})
-df3['Network Type'] = df3['Network Type'].replace({'4G': 1, '3G': 0,'2G' : 0})
+df3['Délestage'] = df3['Délestage'].replace({'Low': 1, 'High': 0})
+df3['Condition financière '] = df3['Condition financière '].replace({'Mid': 1, 'Poor': 0,'Rich':1})
+df3[' Type Internet '] = df3[' Type Internet '].replace({'Wifi': 1, 'Mobile Data': 0})
+df3[' Type de réseau'] = df3[' Type de réseau'].replace({'4G': 1, '3G': 0,'2G' : 0})
 df3['Self Lms'] = df3['Self Lms'].replace({'Yes': 1, 'No': 0})
-df3['Device'] = df3['Device'].replace({'Mobile': 1, 'Computer': 0 ,'Tab' : 1})
-df3['Adaptivity Level'] = df3['Adaptivity Level'].replace({'Moderate': 1, 'Low': 0, 'High' : 0})
+df3['Appareil'] = df3['Appareil'].replace({'Mobile': 1, 'Computer': 0 ,'Tab' : 1})
+df3['Niveau adaptabilité'] = df3['Niveau adaptabilité'].replace({'Moderate': 1, 'Low': 0, 'High' : 0})
 
 # Afficher le DataFrame modifié
 print(df3)
