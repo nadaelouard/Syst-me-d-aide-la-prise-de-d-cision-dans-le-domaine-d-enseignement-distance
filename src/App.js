@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Utilisez Routes au lieu de Route
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './Footer';
-import AboutPage from './AboutPage'; // Importez le composant AboutPage
+import AboutPage from './AboutPage';
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
@@ -23,10 +23,36 @@ function App() {
     setPassword(e.target.value);
   };
 
-  const handleLoginFormSubmit = (e) => {
+  const handleLoginFormSubmit = async (e) => {
     e.preventDefault();
-    console.log('Email:', email);
-    console.log('Password:', password);
+
+    try {
+      const response = await fetch('/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        // Stockez le jeton d'accès retourné dans le stockage local ou les cookies
+        localStorage.setItem('accessToken', data.token);
+        // Redirigez l'utilisateur vers la page protégée ou effectuez une autre action souhaitée
+        // Par exemple, vous pouvez utiliser React Router pour rediriger l'utilisateur
+        // history.push('/profil');
+      } else {
+        console.error('Erreur lors de la connexion:', response.statusText);
+        // Affichez un message d'erreur à l'utilisateur
+      }
+    } catch (error) {
+      console.error('Erreur lors de la connexion:', error.message);
+      // Affichez un message d'erreur à l'utilisateur
+    }
   };
 
   return (
@@ -39,17 +65,15 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Bienvenue sur EduNR - Education Online</h1>
-          <p>
-            Simplifiez vos décisions pédagogiques avec notre outil d'analyse et de recommandation pour l'enseignement à distance
-          </p>
+          <p>Simplifiez vos décisions pédagogiques avec notre outil d'analyse et de recommandation pour l'enseignement à distance</p>
           <nav>
-            <ul>
-              <li><button>Home</button></li>
-              <li><button><Link to="/about">About</Link></button></li>
-              <li><button>Service</button></li>
-              <li><button onClick={handleContactClick}>Contact</button></li>
-            </ul>
-          </nav>
+  <ul>
+    <li><button>Home</button></li>
+    <li><button><Link to="/about">About</Link></button></li>
+    <li><button>Service</button></li>
+    <li><Link to="#" onClick={handleContactClick}>Contact</Link></li>
+  </ul>
+</nav>
         </header>
         {showLogin ? (
           <div className="login-form">
@@ -67,8 +91,9 @@ function App() {
             </form>
           </div>
         ) : null}
-        <Routes> {/* Utilisez Routes ici */}
-          <Route path="/about" element={<AboutPage />} /> {/* Utilisez element pour définir le composant */}
+        <Routes>
+          <Route path="/about" element={<AboutPage />} />
+          
         </Routes>
         <Footer />
       </div>
@@ -77,3 +102,4 @@ function App() {
 }
 
 export default App;
+
