@@ -33,6 +33,7 @@
 * [JavaScript](https://javascript.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Python](https://www.python.org/)
+* [PowerBI](https://www.powerbi.org/)
 
 
 # Installation et Execution de l'application web
