@@ -8,12 +8,12 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, roc_auc_score
 
 # Charger les données depuis le fichier Excel
-df3 = pd.read_excel("C:\\Users\\Rewae amjahid\\Documents\\3eme annee ESISA\\PFA\\data.xlsx")
+df3 = pd.read_excel("C:\\Users\\hp\\Desktop\\PFA\\data.xlsx")
 
 # Afficher les premières lignes du DataFrame pour vérification
 print(df3.head())
 
-# Remplacer les valeurs dans la colonne "sexe"
+# Remplacer les valeurs dans les colonnes
 df3['sexe'] = df3['sexe'].replace({'Boy': 1, 'Girl': 0})
 df3['Niveau éducation'] = df3['Niveau éducation'].replace({'University': 1, 'School': 2, 'College': 3})
 df3['Type établissement'] = df3['Type établissement'].replace({'Government': 1, 'Non Government': 0})
@@ -54,7 +54,9 @@ preprocessor = ColumnTransformer(
 
 # Créer un pipeline avec SMOTE et RandomForestClassifier
 pipeline_rf = ImbPipeline(steps=[
-    ('preprocessor', preprocessor),
+    ('preprocessor', preprocessor),.
+
+
     ('smote', SMOTE(random_state=42)),
     ('classifier', RandomForestClassifier(random_state=42))
 ])
