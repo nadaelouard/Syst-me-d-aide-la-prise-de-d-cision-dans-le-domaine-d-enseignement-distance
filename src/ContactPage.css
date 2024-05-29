@@ -1,0 +1,110 @@
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+  background-color: #0056b3;
+}
+
+.login-form, .data-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.data-form h2 {
+  margin-top: 0;
+}
+
+.login-form h2 {
+  margin-top: 0;
+}
+.contact-page {
+  padding: 20px;
+}
+
+.login-form,
+.data-form {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%; /* Assure que l'input occupe toute la largeur disponible */
+  padding: 10px; /* Augmente le padding pour rendre les champs plus grands */
+  font-size: 16px; /* Augmente la taille de la police */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
+}
+
+.btn {
+  padding: 10px 20px; /* Augmente le padding des boutons */
+  font-size: 16px; /* Augmente la taille de la police des boutons */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
