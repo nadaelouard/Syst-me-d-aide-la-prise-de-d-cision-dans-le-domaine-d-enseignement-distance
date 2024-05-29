@@ -9,14 +9,13 @@ function ContactPage() {
   const [password, setPassword] = useState('');
   const [isAdaptive] = useState(null);
 
-  const navigate = useNavigate(); // Use useNavigate
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     sexe: '',
-    Age: '',
+    age: '',
     NiveauEducation: '',
     institutionType: '',
-    Typeétablissement: '',
     EtudiantInformatique: '',
     Location: '',
     Délestage: '',
@@ -61,53 +60,73 @@ function ContactPage() {
       formData.Appareil === 'Computer';
 
     if (adaptativeConditionsMet) {
-      navigate('/adaptive-description'); // Use navigate for redirection
+      navigate('/adaptive-description');
     } else {
-      navigate('/advice'); // Redirect to advice page
+      navigate('/advice');
     }
   };
-
+  
   return (
     <div className="contact-page">
       <h2>Contact Page</h2>
       {showLogin && !showDataForm && (
-        <div className="login-form">
+        <div className="login-section">
           <h2>Login</h2>
           <form onSubmit={handleLoginFormSubmit}>
-            <div className="form-group">
+            <div className="login">
               <label htmlFor="email">Email</label>
               <input type="email" id="email" value={email} onChange={handleEmailChange} required />
             </div>
-            <div className="form-group">
+            <div className="login">
               <label htmlFor="password">Mot de passe</label>
               <input type="password" id="password" value={password} onChange={handlePasswordChange} required />
             </div>
-            <button type="submit" className="btn">Connexion</button>
+            <button type="submit" className="login-bt">Connexion</button>
+           
           </form>
         </div>
       )}
       {showDataForm && (
-        <div className="data-form">
+        <div className="data-section">
           <h2>Formulaire d'étudiant</h2>
           <form onSubmit={handleDataFormSubmit}>
             <div className="form-group">
-              <label htmlFor="sexe">Sexe</label>
-              <select id="sexe" name="sexe" value={formData.sexe} onChange={handleDataFormChange} required>
-                <option value=""> </option>
-                <option value="Girl">Girl</option>
-                <option value="Boy">Boy</option>
-              </select>
+              <label>Sexe</label>
+              <div className="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="sexe"
+                    value="Girl"
+                    checked={formData.sexe === 'Girl'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  Girl
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="sexe"
+                    value="Boy"
+                    checked={formData.sexe === 'Boy'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  Boy
+                </label>
+              </div>
             </div>
             <div className="form-group">
               <label htmlFor="age">Age</label>
               <select id="age" name="age" value={formData.age} onChange={handleDataFormChange} required>
                 <option value="">  </option>
-                <option value="[21-25]">[21-25]</option>
-                <option value="[16-20]">[16-20]</option>
-                <option value="[11-15]">[11-15]</option>
-                <option value="[26-30]">[26-30]</option>
-                <option value="[6-10]">[6-10]</option>
                 <option value="[1-5]">[1-5]</option>
+                <option value="[6-10]">[6-10]</option>
+                <option value="[11-15]">[11-15]</option>
+                <option value="[16-20]">[16-20]</option>
+                <option value="[21-25]">[21-25]</option>
+                <option value="[26-30]">[26-30]</option>
               </select>
             </div>
             <div className="form-group">
@@ -128,20 +147,58 @@ function ContactPage() {
               </select>
             </div>
             <div className="form-group">
-              <label htmlFor="EtudiantInformatique">L'étudiant en informatique</label>
-              <select id="EtudiantInformatique" name="EtudiantInformatique" value={formData.EtudiantInformatique} onChange={handleDataFormChange} required>
-                <option value=""> </option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
+              <label>L'étudiant en informatique</label>
+              <div className="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="EtudiantInformatique"
+                    value="Yes"
+                    checked={formData.EtudiantInformatique === 'Yes'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  Yes
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="EtudiantInformatique"
+                    value="No"
+                    checked={formData.EtudiantInformatique === 'No'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  No
+                </label>
+              </div>
             </div>
             <div className="form-group">
-              <label htmlFor="location">Location</label>
-              <select id="location" name="location" value={formData.location} onChange={handleDataFormChange} required>
-                <option value=""> </option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                </select>
+              <label>Location</label>
+              <div className="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="Location"
+                    value="Yes"
+                    checked={formData.Location === 'Yes'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  Yes
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="Location"
+                    value="No"
+                    checked={formData.Location === 'No'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  No
+                </label>
+              </div>
             </div>
             <div className="form-group">
               <label htmlFor="Délestage">Délestage</label>
@@ -178,15 +235,34 @@ function ContactPage() {
               </select>
             </div>
             <div className="form-group">
-              <label htmlFor="SelfLms">Self LMS</label>
-              <select id="SelfLms" name="SelfLms" value={formData.SelfLms} onChange={handleDataFormChange} required>
-                <option value=""> </option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
+              <label>Self LMS</label>
+              <div className="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="SelfLms"
+                    value="Yes"
+                    checked={formData.SelfLms === 'Yes'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  Yes
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="SelfLms"
+                    value="No"
+                    checked={formData.SelfLms === 'No'}
+                    onChange={handleDataFormChange}
+                    required
+                  />
+                  No
+                </label>
+              </div>
             </div>
             <div className="form-group">
-              <label htmlFor="Appareil">Appareil</label>
+              <label>Appareil</label>
               <select id="Appareil" name="Appareil" value={formData.Appareil} onChange={handleDataFormChange} required>
                 <option value=""> </option>
                 <option value="Computer">Computer</option>
@@ -195,7 +271,7 @@ function ContactPage() {
               </select>
             </div>
             <div className="form-group">
-              <label htmlFor="NiveauAdaptabilité">Niveau d'adaptabilité</label>
+              <label>Niveau d'adaptabilité</label>
               <select id="NiveauAdaptabilité" name="NiveauAdaptabilité" value={formData.NiveauAdaptabilité} onChange={handleDataFormChange} required>
                 <option value=""></option>
                 <option value="Low">Low</option>
@@ -208,7 +284,7 @@ function ContactPage() {
         </div>
       )}
       {!showLogin && !showDataForm && isAdaptive === null && (
-        <button onClick={handleContactClick} className="btn">Login</button>
+        <button onClick={handleContactClick} className="blo">Login</button>
       )}
       {isAdaptive === false && (
         <div className="result">

@@ -1,109 +1,83 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ContactPage from './ContactPage';
 import './App.css';
-import './ContactPage.css'
+import './ContactPage.css';
 import AdaptiveDescriptionPage from './AdaptiveDescription';
 import AdvicePage from './AdvicePage';
-
+import DetailedAdvicePage from './DetailedAdvicePage';
+import NavBar from './NavBar'; 
+import AboutPage from './AboutPage';
+import YouTubeVideo from './YouTubeVideo';
+import RecommendationsPage from './RecommendationsPage';
+import Chatbot from './Chatbot';
 
 function App() {
   return (
     <Router>
-  <div className="App">
-    <nav className="navbar">
-      <Link to="/Home" className="nav-link">Home</Link>
-      <Link to="/about" className="nav-link">About</Link>
-      <Link to="/contact" className="nav-link">Contact</Link>
-      <Link to="/statistics" className="nav-link">Statistics</Link>
-    </nav>
-    <Routes>
-      {/* Définition des routes pour chaque page */}
-      <Route path="/Home" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/statistics" element={<StatisticsPage />} />
-      <Route path="/adaptive-description" element={<AdaptiveDescriptionPage/>} />
-      <Route path="/advice" element={<AdvicePage/>} />
-    </Routes>
-  </div>
-</Router>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          {/* Définition des routes pour chaque page */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/statistics" element={<StatisticsPage />} />
+          <Route path="/adaptive-description" element={<AdaptiveDescriptionPage />} />
+          <Route path="/advice" element={<AdvicePage />} />
+          <Route path="/detailed-advice" element={<DetailedAdvicePage />} />
+          <Route path="/conseil" element={<RecommendationsPage />} />
+          <Route path="/chatbot" element={<Chatbot />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-// Composant pour la page "About"
-function AboutPage() {
-  return (
-    <div className="about-page">
-  <p className="intro">EduNR est une application web conçue pour simplifier la prise de décision dans le domaine de l'enseignement à distance.</p>
-  <p>Notre équipe, composée de Nada El Ouardi et Rewae AMJAHID, étudiantes en 3ème année à l'École Supérieure d'Ingénierie en Sciences Appliquées (ESISA), a développé cet outil avec pour objectif d'aider les enseignants et les institutions éducatives à mieux gérer leurs cours en ligne.</p>
-  -
-  <h2 className="section-title">Contactez-nous</h2>
-  <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter :</p>
-  <ul className="contact-list">
-    <li><strong>Email :</strong> <a href="mailto:Nadaelouardi17@gmail.com">Nadaelouardi17@gmail.com</a> / <a href="mailto:RewaeAmj@gmail.com">RewaeAmj@gmail.com</a></li>
-    <li><strong>Téléphone :</strong> 06-91-22-20-65 / 06-13-39-61-79</li>
-    <li><strong>Instagram :</strong> <a href="https://www.instagram.com/nada_el_ouardi" target="_blank" rel="noopener noreferrer">nada_el_ouardi</a> / <a href="https://www.instagram.com/Rewae_amj" target="_blank" rel="noopener noreferrer">Rewae_amj</a></li>
-  </ul>
-</div>
-  );
-}
-
-// Composant pour la page "Contact"
-
-
 
 // Composant pour la page "Statistics"
 function StatisticsPage() {
   return (
     <div>
       <h2>Statistics Page</h2>
-      
-      <img src={"C:\\Users\\hp\\syst-me-d-aide-la-prise-de-d-cision\\BI\\BI.png"} alt="Statistique" />
+      <iframe title="powerBI" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMTYwNDk3MjktYzEzMS00Y2QwLTlhMGMtZDNmYjZkNGMzNzRmIiwidCI6ImQ3ZmYxMDAzLWU2NTUtNDA0OC05NDhmLTlkODZjNTAyZWU1NCJ9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
   );
 }
+
 function HomePage() {
   return (
-    <main className="main">
-  <section className="hero">
-    <div className="hero-content">
-      <h1>Bienvenue sur Votre Application EduNR</h1>
-      <p>Optimisez votre enseignement à distance avec des décisions éclairées.</p>
-      <button>En savoir plus</button>
-    </div>
-  </section>
-  <section className="services">
-    <div className="service">
-      <h2>Analyse des Performances</h2>
-      <p>Identifiez les domaines de réussite et les points à améliorer chez vos étudiants.</p>
-    </div>
-    <div className="service">
-      <h2>Recommandations Personnalisées</h2>
-      <p>Recevez des recommandations spécifiques pour optimiser votre enseignement.</p>
-    </div>
-    <div className="service">
-      <h2>Suivi et Certification</h2>
-      <p>Suivez l'engagement de vos étudiants et délivrez des certifications en ligne.</p>
-    </div>
-  </section>
-  <section className="video">
-    <h2>L'Application pour l'Enseignement à Distance</h2>
-    <video controls>
-      <source src="video-url.mp4" type="video/mp4" />
-      Votre navigateur ne prend pas en charge la lecture de la vidéo.
-    </video>
-    <p>
-      Améliorez l'expérience d'apprentissage avec notre système de prise de décision intégré, basé sur les meilleures pratiques en éducation à distance.
-    </p>
-  </section>
-</main>
-);
+    <>
+      <main className="main">
+        <section className="hero" style={{ backgroundImage: 'url(/p.webp)' }}>
+          <div className="hero-content">
+            <h1 >Bienvenue sur votre application ACADEMICS</h1>
+            <p>Optimisez votre enseignement à distance avec des décisions éclairées.</p>
+          </div>
+        </section>
+        <section className="services">
+          <div className="service">
+            <h2>Amélioration de la Motivation</h2>
+            <p>En offrant des contenus qui correspondent mieux aux intérêts et au niveau des étudiants, leur motivation et leur engagement augmentent</p>
+          </div>
+          <div className="service">
+            <h2>Efficacité de l'Apprentissage</h2>
+            <p>Les étudiants progressent à leur propre rythme, ce qui peut améliorer la rétention des connaissances et la réussite académique</p>
+          </div>
+          <div className="service">
+            <h2>Soutien Personnalisé</h2>
+            <p>Les enseignants peuvent fournir un soutien plus ciblé et pertinent basé sur les besoins individuels des étudiants.</p>
+          </div>
+        </section>
+        <section className="video">
+          <h2>L'Application pour l'Enseignement à Distance</h2>
+          <YouTubeVideo />
+          <p>
+            Améliorez l'expérience d'apprentissage avec notre système de prise de décision intégré, basé sur les meilleures pratiques en éducation à distance.
+          </p>
+        </section>
+      </main>
+    </>
+  );
 }
-
-  
-    
- 
-
 export default App;

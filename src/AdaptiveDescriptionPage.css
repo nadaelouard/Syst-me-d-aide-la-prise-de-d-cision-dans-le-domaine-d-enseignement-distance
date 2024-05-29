@@ -1,0 +1,47 @@
+.adaptive-description-page {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 40px 60px;
+    background-image: url('/src/image/p.jpg');
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .adaptive-description-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .message-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .message-box h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .message-box button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .message-box button:hover {
+    background-color: #007B9E;
+  }

@@ -1,0 +1,33 @@
+.detailed-advice-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .detailed-advice-page h1 {
+    color: #333;
+  }
+  
+  .detailed-advice-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .detailed-advice-page li {
+    margin-bottom: 20px;
+  }
+  
+  .advice-link {
+    display: block;
+    margin-top: 5px;
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .advice-link:hover {
+    text-decoration: underline;
+  }
+  
+  .video-container {
+    margin-top: 10px;
+  }
+  
