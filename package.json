@@ -6,12 +6,17 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
     "mongodb": "^3.6.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.22.3",
-    "react-scripts": "5.0.1",
+    "react-player": "^2.16.0",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^3.0.1",
+    "react-simple-chatbot": "^0.6.1",
+    "semantic-ui-react": "^2.1.5",
+    "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +45,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+  },
+  "description": "`https://github.com/nadaelouard/Syst-me-d-aide-la-prise-de-d-cision-dans-le-domaine-d-enseignement-distance.git`",
+  "main": "connect.js",
+  "author": "",
+  "license": "ISC"
 }

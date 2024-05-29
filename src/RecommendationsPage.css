@@ -1,0 +1,71 @@
+.recommendations-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  background-image: url('/src/image/OIP.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.advice-section, .video-section, .resources-section {
+  margin-bottom: 30px;
+}
+
+.advice-container, .resources-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.advice-card, .resource-card {
+  background: rgba(196, 212, 246, 0.8);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  flex-basis: 30%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.react-player {
+  max-width: 100%;
+  width: 720px;
+  height: 405px;
+}
+
+.resource-card a {
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
+
+.resource-card p {
+  margin: 0;
+}

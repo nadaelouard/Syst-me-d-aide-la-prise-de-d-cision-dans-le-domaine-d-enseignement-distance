@@ -1,49 +1,101 @@
-/* AboutPage.css */
-
-body {
-  background-color: #ffebee; /* Arrière-plan rose clair */
+body, html {
+  height: 100%;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  padding: 0;
+  
 }
 
 .about-page {
-  background-color: white; /* Fond blanc pour le contenu principal */
-  color: #333; /* Couleur du texte */
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/src/i.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(196, 212, 246, 0.8);
+  padding: 10px;
   border-radius: 10px;
-  max-width: 800px;
-  margin: 40px auto; /* Ajouter de l'espace en haut pour centrer */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-page h2 {
-  color: #c2185b; /* Couleur du titre */
-  text-align: center;
-}
-
-.about-page h3 {
-  color: #e91e63; /* Couleur des sous-titres */
-  margin-top: 20px;
-}
-
-.about-page ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.about-page ul li {
-  margin: 10px 0;
-}
-
-.about-page p, .about-page li {
+.intro-text {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 1.1em;
   line-height: 1.6;
 }
 
-.about-page a {
-  color: #e91e63;
-  text-decoration: none;
+.profile-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
 }
 
-.about-page a:hover {
-  text-decoration: underline;
+.section-title {
+  margin-bottom: 10px;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.contact-info-block {
+  background: rgba(196, 212, 246, 0.8);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  flex-basis: 22%;
+}
+
+.contact-info-block img.icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-info-block a {
+  color: #007BFF;
+}
+
+.contact-form-container {
+  background: rgba(196, 212, 246, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #c4d4f6;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: rgb(225, 234, 239);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: rgb(200, 220, 240);
 }

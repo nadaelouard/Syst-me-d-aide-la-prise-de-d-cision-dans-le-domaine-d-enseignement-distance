@@ -1,110 +1,181 @@
+/* General Styles */
 .contact-page {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="password"]:focus {
-    border-color: #007BFF;
-    outline: none;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .btn:hover {
-  background-color: #0056b3;
-}
-
-.login-form, .data-form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.data-form h2 {
-  margin-top: 0;
-}
-
-.login-form h2 {
-  margin-top: 0;
-}
-.contact-page {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-.login-form,
+.contact-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styles for Login and Data Forms */
 .data-form {
-  margin: 20px 0;
+  border: 2px solid #ccc;
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: right; /* Aligner le texte à droite */
 }
 
+.login-form {
+  background-color: #e0e0e0;
+}
+
+.data-form {
+  background-color: #f0f0f0;
+}
+
+/* Form Group Styles */
 .form-group {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom:  2px; /* Réduire l'espace entre les lignes */
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 5px;
+  width: 60%;
+  margin-right: 10px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .form-group input,
 .form-group select {
-  width: 100%; /* Assure que l'input occupe toute la largeur disponible */
-  padding: 10px; /* Augmente le padding pour rendre les champs plus grands */
-  font-size: 16px; /* Augmente la taille de la police */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+  width: auto;
+  font-size: 14px; /* Définir la taille de la police */
 }
 
+.form-group select {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 10%;
+  font-size: 14px; /* Définir la taille de la police */
+}
+
+/* Radio Group Styles */
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 100px;
+}
+
+/* Button Styles */
 .btn {
-  padding: 10px 20px; /* Augmente le padding des boutons */
-  font-size: 16px; /* Augmente la taille de la police des boutons */
-  background-color: #4CAF50;
+  display: block;
+  width: 20%;
+  background-color: black;
   color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .btn:hover {
   background-color: #45a049;
+}
+.blo {
+  display: block;
+  width: 20%;
+  background-color: #070707;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+/* Result Styles */
+.result {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
+
+.result h2 {
+  color: #d9534f;
+  text-align: center;
+}
+
+/* Styles for the login section */
+.login-section {
+  width: 50%;
+  border: 0.4px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #191818;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(224, 224, 224, 0.7);
+}
+
+/* Styles for the login elements */
+.login-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.login-section h2 {
+  color: #e0e0e0;
+}
+
+.login-section input[type="email"],
+.login-section input[type="password"] {
+  width: 50%;
+  padding: 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  font-size: 16px; /* Définir la taille de la police */
+}
+
+/* Style for the login button */
+.login-bt {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  background-color: #625eae;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+}
+
+.login-bt:hover {
+  background-color: #0f1d0f;
 }
